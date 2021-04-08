@@ -82,7 +82,7 @@ export class HeroesService {
 
             if (nombre.indexOf(termino) >= 0) {
              
-              heroe.idx = i; 
+            heroe.idx = i; 
              heroesArr.push(heroe);
            }
         }
@@ -96,6 +96,6 @@ export interface Heroe {
     img: String;
     aparicion: String;
     casa: String;
-    idx?: string;
+    idx?: string | number;
 };
 
